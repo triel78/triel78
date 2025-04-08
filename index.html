@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trielphone - Réparation de Téléphones</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #005eff;
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #005eff;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .footer {
+      background: #002e80;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .section h3 {
+        font-size: 1.5rem;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      form input, form textarea, form button {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Trielphone</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+    <h2>Réparez votre smartphone en un éclair</h2>
+    <p>Service rapide, fiable et professionnel à Triel-sur-Seine</p>
+  </section>
+
+  <section class="section" id="apropos">
+    <h3>À propos de Trielphone</h3>
+    <p>Nous sommes spécialisés dans la réparation de téléphones depuis plus de 5 ans. Écrans cassés, batteries fatiguées, connecteurs défectueux : nous redonnons vie à vos appareils avec des pièces de qualité et une expertise reconnue.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Nos services</h3>
+    <div class="services-grid">
+      <div class="service-card">
+        <h4>Réparation d'écran</h4>
+        <p>Écrans cassés ou fissurés ? Nous les remplaçons rapidement.</p>
+      </div>
+      <div class="service-card">
+        <h4>Remplacement de batterie</h4>
+        <p>Batterie qui se décharge trop vite ? On s’en occupe.</p>
+      </div>
+      <div class="service-card">
+        <h4>Connecteurs & boutons</h4>
+        <p>Problèmes de charge ou de boutons ? Nous réparons tout.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contactez-nous</h3>
+    <p>Remplissez le formulaire ci-dessous ou passez nous voir en boutique.</p>
+    <form>
+      <input type="text" placeholder="Nom" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <textarea placeholder="Votre message" rows="5" required></textarea><br><br>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Trielphone © 2025 - Tous droits réservés</p>
+    <p>12 Rue de la Réparation, Triel-sur-Seine</p>
+  </footer>
+</body>
+</html>
